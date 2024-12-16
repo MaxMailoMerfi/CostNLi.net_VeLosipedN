@@ -20,7 +20,6 @@
                     //input = Console.ReadLine();
                     Console.WriteLine($"{namberOne}{namberTuo}{namberThre}{namberFour}");
 
-
                     attempts++;// + попытка
 
                     // Проверка пароля
