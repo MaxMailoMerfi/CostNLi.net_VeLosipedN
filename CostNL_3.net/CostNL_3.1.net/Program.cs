@@ -47,7 +47,6 @@
                     }
 
                     inputNomber = int.Parse(inputText);
-
                     Array.Resize(ref arr, quantity++); // Увеличение масива
                     arr[i++] = inputNomber; // Назанчение номера до масива
 
