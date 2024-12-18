@@ -46,7 +46,6 @@
                     }
 
                     Array.Resize(ref array, quantity++); // Увеличение масива
-
                     array[i++] = int.Parse(input);
                     Console.Clear() ;
                 }
