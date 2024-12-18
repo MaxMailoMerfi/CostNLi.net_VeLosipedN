@@ -11,7 +11,7 @@
     {
         static void Main(string[] args)
         {
-            for (; ; )
+            while (true)
             {
                 int[] arr = new int[0], arrFinal = new int[0];
                 int quantity = 1;

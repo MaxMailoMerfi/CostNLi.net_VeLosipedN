@@ -11,15 +11,16 @@
     {
         static void Main(string[] args)
         {
-            for (; ; )
+            while (true)
             {
-                int quantity = 1, inputNomber;
+                int quantity = 1, inputNomber, i = 0;
                 string inputText;
                 int[] arr = new int[0];
-                string[] arrABC = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" }, arrText = new string[0];
+                string[] arrABC = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
 
-                for (int i = 0; ;) // ввод
+                while (true) // ввод
                 {
+
                     Console.WriteLine("Введите числа для шифрования (от 1 до 26)");
                     Console.WriteLine("Чтобы закончить ввод, оставьте пустую ячейку\n");
                     Console.Write("Массив: ");
@@ -37,7 +38,7 @@
                     }
 
                     // Проверка на дурака
-                    if (!int.TryParse(inputText, out _) || int.Parse(inputText) < 1 || 26 > int.Parse(inputText))
+                    if (!int.TryParse(inputText, out inputNomber) || (int.Parse(inputText) < 1 && int.Parse(inputText) > 26))
                     {
                         Console.WriteLine("Некорректный ввод");
                         Console.WriteLine("Нажмите на любую клавишу");
@@ -46,18 +47,15 @@
                         continue;
                     }
 
-                    inputNomber = int.Parse(inputText);
                     Array.Resize(ref arr, quantity++); // Увеличение масива
                     arr[i++] = inputNomber; // Назанчение номера до масива
 
                     Console.Clear();
                 }
 
-                for (int i = 0; i < arr.Length; i++) // шифровка и вывод
+                for (int j = 0; j < arr.Length; j++) // шифровка и вывод
                 {
-                    Array.Resize(ref arrText, arr.Length);
-                    arrText[i] = arrABC[arr[i] - 1];
-                    Console.Write(arrText[i]);
+                    Console.Write(arrABC[arr[j] - 1]);
                 }
 
                 Console.WriteLine("\n\nЧтобы попробовать еще раз, нажмите на любую клавишу");
