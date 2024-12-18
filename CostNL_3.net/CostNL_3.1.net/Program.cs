@@ -13,10 +13,10 @@
         {
             while (true)
             {
-                int quantity = 1, inputNomber;
+                int quantity = 1;
                 string inputText;
-                int[] arr = new int[0];
-                string[] arrABC = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
+                int[] arr = [];
+                string[] arrABC = [ "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" ];
 
                 for (int i = 0; ;) // ввод
                 {
@@ -38,7 +38,7 @@
                     }
 
                     // Проверка на дурака
-                    if (!int.TryParse(inputText, out inputNomber) || (int.Parse(inputText) < 1 && int.Parse(inputText) > 26))
+                    if (!int.TryParse(inputText, out int inputNomber) || (int.Parse(inputText) < 1 && int.Parse(inputText) > 26))
                     {
                         Console.WriteLine("Некорректный ввод");
                         Console.WriteLine("Нажмите на любую клавишу");
