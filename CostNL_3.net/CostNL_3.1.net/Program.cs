@@ -13,12 +13,12 @@
         {
             while (true)
             {
-                int quantity = 1, inputNomber, i = 0;
+                int quantity = 1, inputNomber;
                 string inputText;
                 int[] arr = new int[0];
                 string[] arrABC = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
 
-                while (true) // ввод
+                for (int i = 0; ;) // ввод
                 {
 
                     Console.WriteLine("Введите числа для шифрования (от 1 до 26)");
@@ -53,9 +53,9 @@
                     Console.Clear();
                 }
 
-                for (int j = 0; j < arr.Length; j++) // шифровка и вывод
+                for (int i = 0; i < arr.Length; i++) // шифровка и вывод
                 {
-                    Console.Write(arrABC[arr[j] - 1]);
+                    Console.Write(arrABC[arr[i] - 1]);
                 }
 
                 Console.WriteLine("\n\nЧтобы попробовать еще раз, нажмите на любую клавишу");
