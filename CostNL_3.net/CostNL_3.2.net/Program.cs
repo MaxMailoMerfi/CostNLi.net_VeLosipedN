@@ -11,9 +11,9 @@
     {
         static void Main(string[] args)
         {
-            for (; ; )
+            while (true)
             {
-                int[] arr = new int[0], arrFinal = new int[0];
+                int[] arr = [], arrFinal = [];
                 int quantity = 1;
                 string input;
 
@@ -22,6 +22,7 @@
                     Console.WriteLine("Введите числа для Массив-чудо");
                     Console.WriteLine("Чтобы закончить ввод, оставьте пустую ячейку\n");
                     Console.Write("Массив: ");
+
                     for (int j = 0; j < arr.Length; j++)
                     {
                         Console.Write(arr[j] + " ");
@@ -68,22 +69,22 @@
                     Console.Write(arrFinal[i] + " ");
                 }
 
-                static bool IsPrime(int n)
-                {
-                    if (n < 1)
-                        return false;
-
-                    for (int i = 2; i <= Math.Sqrt(n); i++)
-                    {
-                        if (n % i == 0)
-                            return false;
-                    }
-                    return true;
-                }
-
                 Console.WriteLine("\n\nЧтобы попробовать еще раз, нажмите на любую клавишу");
                 Console.ReadKey();
                 Console.Clear();
+            }
+
+            static bool IsPrime(int n)
+            {
+                if (n < 1)
+                    return false;
+
+                for (int i = 2; i <= Math.Sqrt(n); i++)
+                {
+                    if (n % i == 0)
+                        return false;
+                }
+                return true;
             }
         }
     }
