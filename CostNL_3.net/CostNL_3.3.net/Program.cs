@@ -9,6 +9,63 @@
     {
         static void Main()
         {
+            int[] array = new int[10]; // 0 = ручний ввод, більше це кількість рандома
+
+            if (array.Length != 0)
+            {
+            RandomArray(array);
+            }
+            else
+            {
+                int quantity = 1;
+                for (int i = 0; ;)
+                {
+                    Console.Write("Массив: ");
+
+                    for (int j = 0; j < array.Length; j++)
+                    {
+                        Console.Write(array[j] + " ");
+                    }
+
+                    string input = Console.ReadLine();
+
+                    //Закончить ввод
+                    if (string.IsNullOrWhiteSpace(input))
+                    {
+                        break;
+                    }
+
+                    // Проверка на дурака
+                    if (!int.TryParse(input, out _))
+                    {
+                        Console.WriteLine("Некорректный ввод");
+                        Console.WriteLine("Нажмите на любую клавишу");
+                        Console.ReadKey();
+                        Console.Clear();
+                        continue;
+                    }
+
+                    Array.Resize(ref array, quantity++); // Увеличение масива
+
+                    array[i++] = int.Parse(input);
+                    Console.Clear() ;
+                }
+
+            }
+        }
+
+
+
+        static void RandomArray(int[] array)
+        {
+            Random rnd = new();
+
+            Console.Write("Массив: ");
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = rnd.Next(21);
+                Console.Write(array[i] + " ");
+            }
         }
     }
 }
