@@ -9,7 +9,7 @@
     {
         static void Main()
         {
-            int[] array = new int[10]; // 0 = ручний ввод, більше це кількість рандома
+            int[] array = new int[5]; // 0 = ручний ввод, більше це кількість рандома
 
             if (array.Length != 0)
             {
