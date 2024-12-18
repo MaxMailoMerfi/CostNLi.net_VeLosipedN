@@ -74,7 +74,6 @@
                 Console.Clear();
             }
 
-            
             static bool IsPrime(int n)
             {
                 if (n < 1)
