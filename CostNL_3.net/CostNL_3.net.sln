@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostNL_3.3.net", "CostNL_3.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostNL_3.4.net", "CostNL_3.4.net\CostNL_3.4.net.csproj", "{1D98BC91-66A1-42BB-A671-C636FD0935EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostNL_3.5.net", "CostNL_3.5.net\CostNL_3.5.net.csproj", "{6D669F76-664B-46BD-9F9A-87CE12A46B3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1D98BC91-66A1-42BB-A671-C636FD0935EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D98BC91-66A1-42BB-A671-C636FD0935EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D98BC91-66A1-42BB-A671-C636FD0935EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D669F76-664B-46BD-9F9A-87CE12A46B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D669F76-664B-46BD-9F9A-87CE12A46B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D669F76-664B-46BD-9F9A-87CE12A46B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D669F76-664B-46BD-9F9A-87CE12A46B3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
