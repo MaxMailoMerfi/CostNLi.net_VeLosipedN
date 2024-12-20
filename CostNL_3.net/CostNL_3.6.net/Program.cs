@@ -9,9 +9,59 @@
 
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            string input = "12349457765434"; // Цыфри высот
+            char[] peakArray = PeakArray(input);
+            Console.WriteLine(new string(peakArray));
+        }
+
+        static char[] PeakArray(string input)
+        {
+            char[] peakArray = input.ToCharArray();
+            Console.WriteLine(new string(peakArray));
+            char[] result = [];
+            int i = 0, j = 0;
+
+            foreach (char c in peakArray)
+            {
+                if (i > 0 && i < peakArray.Length-1 && peakArray[i - 1] <= c && c >= peakArray[i + 1])
+                {
+                    result = new char[j + 1];
+                    j++;
+                }
+                else if (i<0 && c >= peakArray[i+1])
+                {
+                    result = new char[j + 1];
+                    j++;
+                }
+                else if (i >= peakArray.Length - 1 && i < peakArray.Length && peakArray[i - 1] <= c)
+                {
+                    result = new char[j + 1];
+                    j++;
+                }
+                i++;
+            }
+            i = 0; j = 0;
+
+            foreach (char c in peakArray)
+            {
+                if (i > 0 && i < peakArray.Length - 1 && peakArray[i - 1] <= c && c >= peakArray[i + 1])
+                {
+                    result[j++] = c;
+                }
+                else if (i < 0 && c >= peakArray[i + 1])
+                {
+                    result[j++] = c;
+                }
+                else if (i >= peakArray.Length - 1 && i < peakArray.Length && peakArray[i - 1] <= c)
+                {
+                    result[j++] = c;
+                }
+                i++;
+            }
+
+            return result;
         }
     }
 }
