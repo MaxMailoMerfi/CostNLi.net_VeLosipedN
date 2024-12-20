@@ -46,10 +46,8 @@
 
                 Console.WriteLine("Результат:" + new string(result));
 
-
                 /*
                 int shift = 3;// сдвиг
-
 
                 int position = 0;
 
@@ -94,9 +92,6 @@
                 Console.ReadKey();
                 Console.Clear();
             }
-
-
-
         }
     }
 }
