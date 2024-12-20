@@ -18,31 +18,13 @@
                 Console.Write("Ввод:     ");
                 string input = Console.ReadLine();
 
-                char[] result = input.ToCharArray();
-
-                //Console.WriteLine("Ввод:        " + new string(result));
-
-                int i = 0;
-                foreach (char c in result)
+                if (string.IsNullOrWhiteSpace(input))
                 {
-                    if (char.IsUpper(c)) // Большая буква
-                    {
-                        result[i] = (char)('A' + (c - 'A' + shift) % 26);
-                    }
-                    else if (char.IsLower(c)) // Малая буква
-                    {
-                        result[i] = (char)('a' + (c - 'a' + shift) % 26);
-                    }
-                    else if (char.IsDigit(c)) // Число
-                    {
-                        result[i] = (char)('0' + (c - '0' + shift) % 10);
-                    }
-                    else // Остальные
-                    {
-                        result[i] = c;
-                    }
-                    i++;
+                    Console.Clear();
+                    continue;
                 }
+
+                char[] result = ShiftCharacters(input,shift);
 
                 Console.WriteLine("Результат:" + new string(result));
 
@@ -91,6 +73,34 @@
                 Console.WriteLine("\n\nЧтобы попробовать еще раз, нажмите на любую клавишу");
                 Console.ReadKey();
                 Console.Clear();
+            }
+
+            static char[] ShiftCharacters(string input,int shift)
+            {
+                char[] result = input.ToCharArray();
+                //Console.WriteLine("Ввод:        " + new string(result));
+                int i = 0;
+                foreach (char c in result)
+                {
+                    if (char.IsUpper(c)) // Большая буква
+                    {
+                        result[i] = (char)('A' + (c - 'A' + shift) % 26);
+                    }
+                    else if (char.IsLower(c)) // Малая буква
+                    {
+                        result[i] = (char)('a' + (c - 'a' + shift) % 26);
+                    }
+                    else if (char.IsDigit(c)) // Число
+                    {
+                        result[i] = (char)('0' + (c - '0' + shift) % 10);
+                    }
+                    else // Остальные
+                    {
+                        result[i] = c;
+                    }
+                    i++;
+                }
+                return result;
             }
         }
     }
