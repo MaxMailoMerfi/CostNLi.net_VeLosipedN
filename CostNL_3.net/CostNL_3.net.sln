@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostNL_3.8.net", "CostNL_3.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostNL_3.9.net", "CostNL_3.9.net\CostNL_3.9.net.csproj", "{0FA4B9B4-3124-4185-9610-60DBE2208884}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostNL_3.10.net", "CostNL_3.10.net\CostNL_3.10.net.csproj", "{CD0960A9-A475-4DF9-B5CD-AABD24E77C12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{0FA4B9B4-3124-4185-9610-60DBE2208884}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FA4B9B4-3124-4185-9610-60DBE2208884}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FA4B9B4-3124-4185-9610-60DBE2208884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD0960A9-A475-4DF9-B5CD-AABD24E77C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0960A9-A475-4DF9-B5CD-AABD24E77C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0960A9-A475-4DF9-B5CD-AABD24E77C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0960A9-A475-4DF9-B5CD-AABD24E77C12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
