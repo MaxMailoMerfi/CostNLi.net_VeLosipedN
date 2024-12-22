@@ -11,9 +11,27 @@
     {
         static void Main()
         {
-            string input = "12349457765434"; // Цыфри высот
-            char[] peakArray = PeakArray(input);
-            Console.WriteLine(new string(peakArray));
+            while (true)
+            {
+                string input = "1423493457712342248489021321343244"; // Цыфри высот
+
+                if (!double.TryParse(input, out _))
+                {
+                    Console.WriteLine("Некорректный ввод");
+                    Console.WriteLine("Нажмите на любую клавишу");
+                    Console.ReadKey();
+                    Console.Clear();
+                    continue;
+                }
+
+                char[] peakArray = PeakArray(input);
+                Console.WriteLine(new string(peakArray));
+
+                Console.WriteLine("\n\nЧтобы закончить нажмите Ctrl + C");
+                Console.WriteLine("Чтобы попробовать еще раз, нажмите на любую клавишу");
+                Console.ReadKey();
+                Console.Clear();
+            }
         }
 
         static char[] PeakArray(string input)
