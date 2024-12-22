@@ -23,6 +23,11 @@
                 Console.Write(i + " ");
             }
             Console.WriteLine("]");
+
+            Console.WriteLine("\n\nЧтобы закончить нажмите Ctrl + C");
+            Console.WriteLine("Чтобы попробовать еще раз, нажмите на любую клавишу");
+            Console.ReadKey();
+            Console.Clear();
         }
 
         /// <summary>
