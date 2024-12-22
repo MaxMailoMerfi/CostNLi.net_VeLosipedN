@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostNL_3.9.net", "CostNL_3.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostNL_3.10.net", "CostNL_3.10.net\CostNL_3.10.net.csproj", "{CD0960A9-A475-4DF9-B5CD-AABD24E77C12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostNL_3.11.net", "CostNL_3.11.net\CostNL_3.11.net.csproj", "{4EE8092A-8FDA-4A9F-9E50-D76BBA45825A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{CD0960A9-A475-4DF9-B5CD-AABD24E77C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD0960A9-A475-4DF9-B5CD-AABD24E77C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD0960A9-A475-4DF9-B5CD-AABD24E77C12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EE8092A-8FDA-4A9F-9E50-D76BBA45825A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EE8092A-8FDA-4A9F-9E50-D76BBA45825A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EE8092A-8FDA-4A9F-9E50-D76BBA45825A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EE8092A-8FDA-4A9F-9E50-D76BBA45825A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
