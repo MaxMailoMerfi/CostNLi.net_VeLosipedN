@@ -10,7 +10,7 @@
             int value = 123;
             Console.WriteLine($"Looking for a number: " + value);
             int indexValue;
-            int[] array = new int[10000000];
+            int[] array = new int[100000000];
 
             RandomArray(ref array);
             Array.Sort(array);
@@ -51,27 +51,24 @@
         /// <returns>The index under which the number is located</returns>
         public static int JumpSearch(int[] array, int value)
         {
-            int indexValue = -1;
-            int step = array.Length / 10;
+            int step = array.Length / 20;
 
             for (int i = step; i < array.Length;)
             {
                 if (array[i] == value)
                 {
-                    indexValue = i;
-                    break;
+                    return i;
                 }
                 else if (array[i] > value)
                 {
-                    indexValue = BinarySearch(array, i - step, i, value);
-                    break;
+                    return BinarySearch(array, i - step, i, value);
                 }
                 else if (array[i] < value)
                 {
                     i += step;
                 }
             }
-            return indexValue;
+            return -1;
         }
 
         /// <summary>
@@ -84,8 +81,6 @@
         /// <returns>The index under which the number is located</returns>
         static int BinarySearch(int[] array, int startIndex, int endIndex, int velue)
         {
-
-            int indexValue = -1;
             int step = (endIndex - startIndex) / 2;
             //Console.WriteLine();
             //Console.WriteLine(step + startIndex);
@@ -93,8 +88,7 @@
 
             if (array[step + startIndex] == velue)
             {
-                indexValue = (step + startIndex);
-                return indexValue;
+                return (step + startIndex);
             }
             else if (array[step + startIndex] < velue)
             {
@@ -106,7 +100,7 @@
             }
             else
             {
-                return indexValue;
+                return -1;
             }
         }
     }
