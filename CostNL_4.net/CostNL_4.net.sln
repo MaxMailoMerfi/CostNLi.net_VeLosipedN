@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostNL_4.1.net", "CostNL_4.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostNL_4.2.net", "CostNL_4.2.net\CostNL_4.2.net.csproj", "{735EE70A-1CAF-49F6-ACE3-E8A28330268C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostNL_4.3.net", "CostNL_4.3.net\CostNL_4.3.net.csproj", "{ACDA0D45-7022-4FD7-ABC9-BCF30CF97878}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{735EE70A-1CAF-49F6-ACE3-E8A28330268C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{735EE70A-1CAF-49F6-ACE3-E8A28330268C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{735EE70A-1CAF-49F6-ACE3-E8A28330268C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACDA0D45-7022-4FD7-ABC9-BCF30CF97878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACDA0D45-7022-4FD7-ABC9-BCF30CF97878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACDA0D45-7022-4FD7-ABC9-BCF30CF97878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACDA0D45-7022-4FD7-ABC9-BCF30CF97878}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
