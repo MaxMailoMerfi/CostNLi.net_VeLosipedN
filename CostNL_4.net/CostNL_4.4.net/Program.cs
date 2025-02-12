@@ -36,6 +36,11 @@
             }
         }
 
+        /// <summary>
+        /// Checking for monotonicity of the array
+        /// </summary>
+        /// <param name="array"></param>
+        /// <returns></returns>
         public static bool ArrayIsMonotone(int[] array)
         {
             for (int i = 1; i < array.Length - 1; i++)
