@@ -1,7 +1,4 @@
-﻿using System.Globalization;
-using System.Xml.Linq;
-
-namespace CostNL_4._3.net
+﻿namespace CostNL_4._3.net
 {
     //3. Слияние двух отсортированных массивов
     //Условие:
