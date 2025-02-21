@@ -12,13 +12,13 @@
         static void Main()
         {
             byte[] arrayByte = new byte[256];
-            byte[] arrayShort = new byte[10];
-            RandomArray(ref arrayShort, 0, 5);
+            byte[] arrayShort = new byte[50];
+            RandomArray(ref arrayShort, 0,255);
             foreach (int i in arrayShort)
             {
                 arrayByte[i]++;
             }
-
+            SortByFrequency(ref arrayByte, arrayShort);
         }
 
         /// <summary>
@@ -37,5 +37,30 @@
         }
 
 
+        public static void SortByFrequency(ref byte[] arrayByte, byte[] arrayShort)
+        {
+            byte maxByte = 0;
+            byte position = 0;
+            for (; position < arrayShort.Length;)
+            {
+                for (byte i = 0; i < arrayByte.Length - 1; i++)
+                {
+                    if (arrayByte[i] > arrayByte[maxByte])
+                    {
+                        maxByte = i;
+                    }
+                }
+                for (byte i = 0; i < arrayByte[maxByte]; i++)
+                {
+                    arrayShort[position] = maxByte;
+                    position++;
+                }
+                arrayByte[maxByte] = 0;
+                if (maxByte >= 255)
+                {
+                    break;
+                }
+            }
+        }
     }
 }
